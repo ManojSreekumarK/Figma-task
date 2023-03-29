@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+    <title>Bootstrap site</title>
+  </head>
+  <body>
+    <div class="head-bg">
+      <img
+        class="logo"
+        src="https://i.ibb.co/2cDC92z/M-Alphabet-GIF-by-Mr-A-Hayes-unscreen.gif"
+        alt="M-Alphabet-GIF-by-Mr-A-Hayes-unscreen"
+        border="0"
+      />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="xMidYMid slice"
+        viewBox="0 0 100 100"
+      >
+        <defs>
+          <style>
+            @keyframes rotate {
+              100% {
+                transform: rotate(360deg);
+              }
+            }
+            .out-top {
+              animation: rotate 20s linear infinite;
+              transform-origin: 13px 25px;
+            }
+            .in-top {
+              animation: rotate 10s linear infinite;
+              transform-origin: 13px 25px;
+            }
+            .out-bottom {
+              animation: rotate 25s linear infinite;
+              transform-origin: 84px 93px;
+            }
+            .in-bottom {
+              animation: rotate 15s linear infinite;
+              transform-origin: 84px 93px;
+            }
+          </style>
+        </defs>
+        <path
+          fill="#9b5de5"
+          class="out-top"
+          d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z"
+        />
+        <path
+          fill="#f15bb5"
+          class="in-top"
+          d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z"
+        />
+        <path
+          fill="#00bbf9"
+          class="out-bottom"
+          d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z"
+        />
+        <path
+          fill="#00f5d4"
+          class="in-bottom"
+          d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z"
+        />
+      </svg>
+    </div>
+
+    <nav class="navbar navbar-expand-md bg-dark sticky-top navbar-dark px-5">
+      <div class="container-fluid">
+        <img
+          class="pe-4"
+          src="https://i.ibb.co/nLh92sR/icons8-m-48.png"
+          alt="icons8-m-48"
+          border="0"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item px-2">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link active" href="#">Inspiration</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link active" href="#">Find </a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link active" href="#">Learn </a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link active" href="#">Pro</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="col btn btn-pink-moon" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky"></div>
+        </nav>
+        <main class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-md-12 mt-5">
+                <h1>Gallery</h1>
+                <p align="justify" class="lead mb-5">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
+                  error nesciunt animi iusto tenetur ad aperiam sapiente,
+                  repellendus consequatur ipsum assumenda dignissimos officiis
+                  beatae numquam accusamus doloremque ducimus, provident natus!
+                  Nobis non exercitationem delectus consequatur quibusdam quia,
+                  odio accusantium culpa tempore eius distinctio, est sequi
+                  consequuntur a officia quas vero! Soluta autem atque
+                  doloremque quasi animi magnam assumenda laborum nam. Culpa
+                  aliquam quo recusandae facilis illum quia sapiente a expedita
+                  architecto beatae, animi fugiat atque soluta vel magni nisi ab
+                  ex aperiam iste libero eveniet minima illo. Necessitatibus
+                  quasi quidem minima cupiditate beatae aspernatur mollitia et
+                  impedit qui nisi amet aperiam illo sed dolorem molestiae
+                  placeat veniam ea deleniti ex, ratione, laborum iusto. Eos
+                  expedita ipsum esse vitae minus unde?
+                </p>
+                <div class="row">
+                  <div
+                    id="carouselExampleControls"
+                    class="carousel slide w-50 h-auto"
+                    data-bs-ride="carousel"
+                  >
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          class="img-c"
+                          src="https://i.ibb.co/2h0YY0k/7-Tips-to-Finding-Art-Inspiration-Header-1024x649.jpg"
+                          alt="7-Tips-to-Finding-Art-Inspiration-Header-1024x649"
+                          border="0"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          class="img-c"
+                          src="https://i.ibb.co/kQGq3v1/Famous-Ocean-Paintings-848x530.jpg"
+                          alt="Famous-Ocean-Paintings-848x530"
+                          border="0"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          class="img-c"
+                          src="https://i.ibb.co/Mn0BhwX/history-of-painting.jpg"
+                          alt="history-of-painting"
+                          border="0"
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselExampleControls"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselExampleControls"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <div
+                    id="carouselExampleIndicators"
+                    class="carousel slide w-50"
+                    data-bs-ride="carousel"
+                  >
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          class="img-c"
+                          src="https://i.ibb.co/rtY4K9n/magical-nature-paintings-ilievskivladimir-wide-3-2-63b54ebd76ec9.png"
+                          alt="magical-nature-paintings-ilievskivladimir-wide-3-2-63b54ebd76ec9"
+                          border="0"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          class="img-c"
+                          src="https://i.ibb.co/Xp43CZ4/Types-of-Visual-Art-848x530.jpg"
+                          alt="Types-of-Visual-Art-848x530"
+                          border="0"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          class="img-c"
+                          src="https://i.ibb.co/XCnW4VB/Painting.jpg"
+                          alt="Painting"
+                          border="0"
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-5">
+              <div class="col-md-6 mb-4">
+                <h2>Subscription</h2>
+                <p align="justify">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Exercitationem, porro quia minima explicabo nostrum dolorem
+                  aspernatur possimus rem harum provident consectetur quasi,
+                  laboriosam sequi ullam nisi, cum beatae incidunt molestias
+                  modi tenetur ex fugit totam. Eaque maxime, sunt voluptatibus
+                  corrupti natus ducimus voluptates neque ipsam blanditiis
+                  itaque modi dicta harum numquam. Quod iure libero expedita
+                  commodi quibusdam vitae magni molestiae a! Sapiente quae eaque
+                  iure cumque consectetur cupiditate quisquam recusandae.
+                </p>
+                <button type="button" class="btn btn-outline-info">Info</button>
+              </div>
+              <div class="col-md-6">
+                <h2>Other Services</h2>
+                <p align="justify">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Exercitationem, porro quia minima explicabo nostrum dolorem
+                  aspernatur possimus rem harum provident consectetur quasi,
+                  laboriosam sequi ullam nisi, cum beatae incidunt molestias
+                  modi tenetur ex fugit totam. Eaque maxime, sunt voluptatibus
+                  corrupti natus ducimus voluptates neque ipsam blanditiis
+                  itaque modi dicta harum numquam. Quod iure libero expedita
+                  commodi quibusdam vitae magni molestiae a! Sapiente quae eaque
+                  iure cumque consectetur cupiditate quisquam recusandae.
+                </p>
+                <button type="button" class="btn btn-outline-info">Info</button>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <div class="container-fluid px-5">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+          >
+            <a href="#"
+              ><img
+                src="https://i.ibb.co/Fq1Xnj4/icons8-medium-monogram.gif"
+                alt="icons8-medium-monogram"
+                border="0"
+            /></a>
+          </a>
+          <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-muted" href="#"
+              ><img
+                src="https://i.ibb.co/s1n4MKg/icons8-twitter-1.gif"
+                alt="icons8-twitter-1"
+                border="0"
+            /></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="#"
+              ><img
+                src="https://i.ibb.co/GHSMhPd/icons8-instagram-1.gif"
+                alt="icons8-instagram-1"
+                border="0"
+            /></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="#"
+              ><img
+                src="https://i.ibb.co/H4NCsfC/icons8-facebook-circled-1.gif"
+                alt="icons8-facebook-circled-1"
+                border="0"
+            /></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>
